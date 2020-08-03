@@ -29,7 +29,7 @@
 .header {
   background: url("../img/header-bg.png") no-repeat;
   background-position: cover;
-  height: 100vh;
+  height: 790px;
   color: white; }
   .header-top {
     display: -webkit-box;
@@ -105,5 +105,33 @@
       .header-buttons-container:last-child button {
         background-color: transparent;
         border: 1px solid #d91233; }
+
+section.about {
+  margin-top: 80px; }
+  section.about .about-firstRow,
+  section.about .about-secondRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    section.about .about-firstRow .about-block,
+    section.about .about-secondRow .about-block {
+      text-align: center;
+      margin-right: 90px; }
+      section.about .about-firstRow .about-block-image,
+      section.about .about-secondRow .about-block-image {
+        margin-top: 20px; }
+      section.about .about-firstRow .about-block-title,
+      section.about .about-secondRow .about-block-title {
+        margin-top: 20px;
+        font-size: 16px;
+        font-size: 16px;
+        font-weight: 700; }
+      section.about .about-firstRow .about-block-subtitle,
+      section.about .about-secondRow .about-block-subtitle {
+        margin-top: 20px;
+        font-size: 14px; }
+  section.about .about-secondRow {
+    margin-top: 80px; }
 
 /*# sourceMappingURL=style.css.map */
