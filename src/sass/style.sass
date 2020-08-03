@@ -1,4 +1,76 @@
-header
+@font-face 
+    font-family: 'Lato Rus' 
+    src: url(../fonts/Lato-Regular.woff)
+    font-weight: normal
+@font-face 
+    font-family: 'Lato Rus' 
+    src: url(../fonts/Lato-Bold.woff)
+    font-weight: 700
+*
+    font-family: 'Lato Rus'
+.container
+    display: flex
+    flex-direction: column
+    align-items: center
+.header
     background: url('../img/header-bg.png') no-repeat
     background-position: cover
     height: 100vh
+    color: white
+    &-top
+        display: flex
+        margin-top: 34px
+        &-logo
+            font-size: 30px
+            color: #5a5a5a
+            margin-right: 590px
+        &-contact
+            &-title
+                font-size: 28px
+                font-weight: 700
+            &-subtitle
+                color: #d91233
+                font-size: 16px
+                text-decoration: underline
+    &-main-text
+        margin-top: 113px
+        &-title
+            font-size: 48px
+            font-weight: 700
+            text-transform: uppercase
+        &-subtitle
+            font-size: 30px
+            line-height: 46px
+            text-align: center
+    &-images
+        margin-top: 100px
+        display: flex
+        &-block
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            margin-right: 100px
+            text-align: center
+            &-subtitle
+                margin-top: 35px
+    &-buttons
+        margin-top: 115px
+        display: flex
+        &-container
+            margin-right: 40px
+            &-subtitle
+                font-size: 14px
+                text-align: center
+                margin-top: 20px
+            button
+                width: 240px
+                height: 50px
+                border-radius: 25px
+                background-color: #d91233
+                border: none
+                color: white
+                font-weight: 700
+            &:last-child
+                button
+                    background-color: transparent
+                    border: 1px solid #d91233
