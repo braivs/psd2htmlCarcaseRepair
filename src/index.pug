@@ -91,6 +91,50 @@ html(lang="en")
                         |Мы заключаем договор<br>
                         |купли-продажи и предоставляем<br>
                         |все необходимые документы
+        
+        section.requestForm.container
+            .requestForm-top
+                .requestForm-top-title Подробная заявка
+                .requestForm-top-subtitle Заполните форму и получите максимально точную цену!
+            form.requestForm-form(action="")
+                .requestForm-form-column
+                    .requestForm-form-column-row
+                        .title Марка:
+                        select 
+                            option(selected) Выберите марку
+                            option Audi
+                            option Mercedes-Benz
+                    .requestForm-form-column-row
+                        .title Модель:
+                        select 
+                            option(selected) Выберите модель
+                            option Audi A4
+                            option Audi A3
+                    .requestForm-form-column-row
+                        .title Год выпуска:
+                        select 
+                            option(selected) Выберите год
+                            option 2009
+                            option 2020
+                .requestForm-form-column
+                    .requestForm-form-column-row
+                        .title Необходимые детали:
+                        textarea(placeholder='Введите')
+                    .requestForm-form-column-row
+                        .title Ваше имя:
+                        input(type="text", placeholder='Введите')
+                .requestForm-form-column
+                    .requestForm-form-column-row
+                        .title Ваш телефон:
+                        input(type="tel")
+                    .requestForm-form-column-row
+                        .title Ваш e-mail:
+                        input(type="email")
+                        button Узнать цену
+
+                
+
+                
 
 
 

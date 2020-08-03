@@ -9,7 +9,8 @@
   font-weight: 700; }
 
 * {
-  font-family: 'Lato Rus'; }
+  font-family: 'Lato Rus';
+  box-sizing: border-box; }
 
 .container {
   display: -webkit-box;
@@ -24,7 +25,8 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 1920px; }
 
 .header {
   background: url("../img/header-bg.png") no-repeat;
@@ -133,5 +135,60 @@ section.about {
         font-size: 14px; }
   section.about .about-secondRow {
     margin-top: 80px; }
+
+.requestForm {
+  margin-top: 80px;
+  padding-top: 80px;
+  background-color: #ebebeb; }
+  .requestForm-top-title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; }
+  .requestForm-top-subtitle {
+    font-size: 16px;
+    margin-top: 20px; }
+  .requestForm-form {
+    margin-top: 60px;
+    padding: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border: 5px solid white; }
+    .requestForm-form-column {
+      margin-right: 50px; }
+      .requestForm-form-column-row:not(:last-child) {
+        margin-bottom: 20px; }
+      .requestForm-form-column-row .title {
+        font-size: 13px; }
+      .requestForm-form-column-row select, .requestForm-form-column-row input, .requestForm-form-column-row textarea {
+        width: 240px;
+        height: 40px;
+        font-size: 13px; }
+        .requestForm-form-column-row select::-webkit-input-placeholder, .requestForm-form-column-row input::-webkit-input-placeholder, .requestForm-form-column-row textarea::-webkit-input-placeholder {
+          color: #b8b8b8; }
+        .requestForm-form-column-row select::-moz-placeholder, .requestForm-form-column-row input::-moz-placeholder, .requestForm-form-column-row textarea::-moz-placeholder {
+          color: #b8b8b8; }
+        .requestForm-form-column-row select:-ms-input-placeholder, .requestForm-form-column-row input:-ms-input-placeholder, .requestForm-form-column-row textarea:-ms-input-placeholder {
+          color: #b8b8b8; }
+        .requestForm-form-column-row select::-ms-input-placeholder, .requestForm-form-column-row input::-ms-input-placeholder, .requestForm-form-column-row textarea::-ms-input-placeholder {
+          color: #b8b8b8; }
+        .requestForm-form-column-row select::placeholder, .requestForm-form-column-row input::placeholder, .requestForm-form-column-row textarea::placeholder {
+          color: #b8b8b8; }
+      .requestForm-form-column-row select option:first-child {
+        color: #b8b8b8; }
+      .requestForm-form-column-row textarea {
+        height: 115px;
+        resize: none; }
+      .requestForm-form-column-row button {
+        display: block;
+        margin-top: 30px;
+        width: 240px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #d91233;
+        border: none;
+        color: white;
+        font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
