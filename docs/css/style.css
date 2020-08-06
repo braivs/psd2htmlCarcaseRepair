@@ -139,7 +139,8 @@ section.about {
 .requestForm {
   margin-top: 80px;
   padding-top: 80px;
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  padding-bottom: 80px; }
   .requestForm-top-title {
     font-size: 30px;
     font-weight: 700;
@@ -175,11 +176,12 @@ section.about {
           color: #b8b8b8; }
         .requestForm-form-column-row select::placeholder, .requestForm-form-column-row input::placeholder, .requestForm-form-column-row textarea::placeholder {
           color: #b8b8b8; }
-      .requestForm-form-column-row select option:first-child {
-        color: #b8b8b8; }
+      .requestForm-form-column-row input {
+        padding-left: 15px; }
       .requestForm-form-column-row textarea {
         height: 115px;
-        resize: none; }
+        resize: none;
+        padding: 15px 0 0 15px; }
       .requestForm-form-column-row button {
         display: block;
         margin-top: 30px;
@@ -190,5 +192,22 @@ section.about {
         border: none;
         color: white;
         font-weight: 700; }
+
+.detailes {
+  margin-top: 80px; }
+
+.video {
+  margin-top: 80px; }
+  .video-title {
+    font-size: 30px;
+    font-weight: 700; }
+  .video-wrapper {
+    padding: 15px;
+    border: 5px solid #f2f2f2;
+    margin-top: 60px; }
+    .video-wrapper .video-player {
+      width: 780px;
+      height: 390px;
+      background-color: #3b3b3b; }
 
 /*# sourceMappingURL=style.css.map */
