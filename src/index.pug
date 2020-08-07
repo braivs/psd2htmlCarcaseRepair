@@ -133,22 +133,24 @@ html(lang="en")
                         button Узнать цену
 
         section.detailes.container
-            .detailes-row1
-                img(src="img/car1.png", alt="")
-                img(src="img/car2.png", alt="")
-                img(src="img/car3.png", alt="")
-                img(src="img/car4.png", alt="")
-                img(src="img/car5.png", alt="")
-            .detailes-row2   
-                img(src="img/car6.png", alt="")
-                img(src="img/car7.png", alt="")
-                img(src="img/car8.png", alt="")
-                img(src="img/car9.png", alt="")
-            .detailes-row3
-                img(src="img/car10.png", alt="")
-                img(src="img/car11.png", alt="")
-                img(src="img/car12.png", alt="")
-                img(src="img/car13.png", alt="")
+            .detailes-title Имеем в наличии детали на авто:
+            .container-inner
+                .detailes-row
+                    img(src="img/car1.png", alt="")
+                    img(src="img/car2.png", alt="")
+                    img(src="img/car3.png", alt="")
+                    img(src="img/car4.png", alt="")
+                    img(src="img/car5.png", alt="")
+                .detailes-row   
+                    img(src="img/car6.png", alt="")
+                    img(src="img/car7.png", alt="")
+                    img(src="img/car8.png", alt="")
+                    img(src="img/car9.png", alt="")
+                .detailes-row
+                    img(src="img/car10.png", alt="")
+                    img(src="img/car11.png", alt="")
+                    img(src="img/car12.png", alt="")
+                    img(src="img/car13.png", alt="")
 
         section.video.container
             .video-title Вы можете посмотреть что происходит у нас!
@@ -208,6 +210,33 @@ html(lang="en")
                             |скидкам, отличному качеству продукции.
         
         section.consultation.container
+            h1 Нужна консультация?
+            h2 Заполните форму и получите максимально точную цену!
+            .consultation-form
+                .input-container
+                    .input-block
+                        .input-title Ваше имя:
+                        input(type="text")
+                    .input-block
+                        .input-title Ваш телефон:
+                        input(type="tel")
+                button Заказать консультацию
+        
+        section.map.container
+            .map-block
+                .map-block-title Контакты
+                .map-block-text г. Москва, ул. Дорожная, 8, к.1
+                .map-block-tel 8 800 123 43 34
+                .map-block-email info@sitename.ru
+
+        footer.container
+            .footer-top
+                .footer-top-logo ЛОГОТИП
+                .footer-top-contact 
+                    .footer-top-contact-title 8 800 232 32 12
+                    .footer-top-contact-subtitle Заказать обратный звонок
+
+
 
             
 

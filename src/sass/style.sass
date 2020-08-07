@@ -9,16 +9,23 @@
 *
     font-family: 'Lato Rus'
     box-sizing: border-box
-    h1
-        margin: 0
-        padding: 0
+    
 .container
     display: flex
     flex-direction: column
     align-items: center
-    width: 1920px
-
-.header
+    width: 100wh
+h1,h2
+    margin: 0
+    padding: 0
+h1
+    font-size: 30px
+    font-weight: 700
+h2 
+    font-size: 16px
+    margin-top: 20px
+    font-weight: 400
+.header,.footer
     background: url('../img/header-bg.png') no-repeat
     background-position: cover
     height: 790px
@@ -152,6 +159,18 @@ section.about
 
 .detailes
     margin-top: 80px
+    &-title 
+        font-size: 30px
+        font-weight: 700
+    .container-inner
+        margin-top: 60px
+        display: flex
+        flex-direction: column
+        align-items: center
+        .detailes-row:not(:first-child)
+            margin-top: 20px
+            img 
+                margin-right: 20px
 
 .video
     margin-top: 80px
@@ -171,6 +190,7 @@ section.clients.container
     background-color: #ebebeb
     margin-top: 80px
     padding-top: 80px
+    padding-bottom: 80px
     h1 
         font-size: 30px
         font-weight: 700
@@ -197,3 +217,68 @@ section.clients.container
                     color: #2b2b2b
                     font-size: 13px
                     font-weight: 700
+
+.consultation 
+    background-color: #dbdbdb
+    padding: 80px
+    .consultation-form
+        margin-top: 60px
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 5px solid #ffffff
+        padding: 60px
+        .input-container
+            display: flex
+            .input-block
+                margin-right: 40px
+                .input-title
+                    font-size: 13px
+                    margin-bottom: 7px
+                input
+                    width: 290px
+                    height: 45px
+                    border: none
+                    padding-left: 15px 
+        button
+            margin-top: 40px
+            width: 300px
+            height: 50px
+            border-radius: 25px
+            background-color: #d91233
+            border: none
+            color: #ffffff
+            font-size: 18px
+            font-weight: 700
+
+.map
+    background: url('../img/map.jpg') no-repeat
+    background-position: cover
+    height: 500px
+    position: relative
+    &-block
+        background-color: #d91233
+        position: absolute 
+        top: 50px
+        left: 50%
+        transform: translate(-50%)
+        padding: 50px 100px
+        color: #fff
+        text-align: center
+        &-title
+            font-size: 24px
+            font-weight: 700
+            margin-bottom: 35px
+        &-text
+            font-size: 20px
+        &-tel
+            font-weight: 700
+        &-email
+            text-decoration: underline
+        &-text, &-tel, &-email
+            font-size: 20px    
+        &-text, &-tel
+            margin-bottom: 30px
+
+footer
+    margin-bottom: 30px
