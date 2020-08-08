@@ -57,18 +57,54 @@
     font-size: 15px; } }
 
 @media (max-width: 567px) {
-  .header-main-text-title, .footer-main-text-title {
-    font-size: 30px; }
-  .header-main-text-subtitle, .footer-main-text-subtitle {
+  .container {
+    padding: 0 10px; }
+  .header-top-logo, .footer-top-logo {
     font-size: 20px; }
+  .header-top-contact-title, .footer-top-contact-title {
+    font-size: 20px; }
+  .header-top-contact-subtitle, .footer-top-contact-subtitle {
+    font-size: 12px; }
+  .header-main-text-title, .footer-main-text-title {
+    font-size: 27px; }
+  .header-main-text-subtitle, .footer-main-text-subtitle {
+    font-size: 17px; }
   .header-images, .footer-images {
     margin-top: 70px; }
     .header-images-block-subtitle, .footer-images-block-subtitle {
       margin-top: 20px; }
   .header-buttons button, .footer-buttons button {
     width: 160px; }
+  .about {
+    margin-top: 40px; }
+  .requestForm {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .requestForm-form {
+      padding: 30px 0px 30px 5px; }
+  .detailes {
+    margin-top: 40px; }
   .video-wrapper .video-player {
-    width: 380px;
-    height: 200px; } }
+    width: 320px;
+    height: 190px; }
+  .consultation {
+    padding: 40px; }
+    .consultation .consultation-form {
+      margin-top: 30px; }
+      .consultation .consultation-form .input-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0 20px; }
+        .consultation .consultation-form .input-container .input-block {
+          text-align: center; }
+          .consultation .consultation-form .input-container .input-block .input-title:last-child {
+            margin-top: 10px; }
+          .consultation .consultation-form .input-container .input-block input {
+            width: 200px;
+            padding: 0; } }
 
 /*# sourceMappingURL=media.css.map */
