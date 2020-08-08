@@ -15,6 +15,7 @@
     flex-direction: column
     align-items: center
     width: 100wh
+    // border: 1px solid red
 h1,h2
     margin: 0
     padding: 0
@@ -26,7 +27,7 @@ h2
     margin-top: 20px
     font-weight: 400
 .header,.footer
-    background: url('../img/header-bg.png') no-repeat
+    background: url('../img/header-bg.png') repeat-y 
     background-position: cover
     height: 790px
     color: white
@@ -51,6 +52,7 @@ h2
             font-size: 48px
             font-weight: 700
             text-transform: uppercase
+            text-align: center
         &-subtitle
             font-size: 30px
             line-height: 46px
@@ -62,15 +64,15 @@ h2
             display: flex
             flex-direction: column
             justify-content: space-between
-            margin-right: 100px
             text-align: center
             &-subtitle
                 margin-top: 35px
+        &-block:not(:last-child)
+            margin-right: 100px
     &-buttons
         margin-top: 115px
         display: flex
         &-container
-            margin-right: 40px
             &-subtitle
                 font-size: 14px
                 text-align: center
@@ -87,15 +89,17 @@ h2
                 button
                     background-color: transparent
                     border: 1px solid #d91233
+        &-container:not(:last-child)
+            margin-right: 40px
 
-section.about 
+
+.about 
     margin-top: 80px
     .about-firstRow,
     .about-secondRow
         display: flex
         .about-block
             text-align: center
-            margin-right: 90px
             &-image
                 margin-top: 20px
             &-title
@@ -105,7 +109,9 @@ section.about
                 font-weight: 700
             &-subtitle
                 margin-top: 20px
-                font-size: 14px          
+                font-size: 14px
+        .about-block:not(:last-child)
+            margin-right: 90px          
     .about-secondRow
         margin-top: 80px
 
@@ -113,6 +119,8 @@ section.about
     margin-top: 80px
     padding-top: 80px
     background-color: #ebebeb
+    padding-bottom: 80px
+
     &-top
         &-title
             font-size: 30px
@@ -124,10 +132,11 @@ section.about
     &-form
         margin-top: 60px
         padding: 60px
-        display: flex
+        display: grid
+        grid-template-columns: auto auto auto
         border: 5px solid white
         &-column
-            margin-right: 50px
+            // margin-right: 50px
             &-row:not(:last-child)
                 margin-bottom: 20px
             &-row
@@ -155,7 +164,8 @@ section.about
                     border: none
                     color: white
                     font-weight: 700
-    padding-bottom: 80px
+        &-column:not(:last-child)
+            margin-right: 50px
 
 .detailes
     margin-top: 80px
@@ -167,16 +177,19 @@ section.about
         display: flex
         flex-direction: column
         align-items: center
+        .detailes-row
+            text-align: center
+            img:not(:last-child) 
+                margin-right: 20px
         .detailes-row:not(:first-child)
             margin-top: 20px
-            img 
-                margin-right: 20px
 
 .video
     margin-top: 80px
     &-title
         font-size: 30px
         font-weight: 700
+        text-align: center
     &-wrapper
         padding: 15px
         border: 5px solid #f2f2f2
@@ -186,7 +199,7 @@ section.about
             height: 390px
             background-color: #3b3b3b
 
-section.clients.container
+.clients
     background-color: #ebebeb
     margin-top: 80px
     padding-top: 80px
@@ -253,7 +266,7 @@ section.clients.container
 
 .map
     background: url('../img/map.jpg') no-repeat
-    background-position: cover
+    background-position: center
     height: 500px
     position: relative
     &-block
@@ -282,3 +295,4 @@ section.clients.container
 
 footer
     margin-bottom: 30px
+

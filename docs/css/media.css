@@ -1,0 +1,74 @@
+@media (max-width: 992px) {
+  .header, .footer {
+    height: auto; }
+    .header-top-logo, .footer-top-logo {
+      margin-right: 100px; }
+    .header-buttons, .footer-buttons {
+      margin-top: 80px;
+      padding-bottom: 25px; }
+  .requestForm-form {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10px; }
+  .video-wrapper .video-player {
+    width: 680px;
+    height: 290px; }
+  .clients .container-inner {
+    gap: 15px;
+    padding: 15px 15px 0; }
+  .consultation .consultation-form {
+    padding: 30px; } }
+
+@media (max-width: 768px) {
+  .header-main-text-title, .footer-main-text-title {
+    font-size: 38px; }
+  .header-main-text-subtitle, .footer-main-text-subtitle {
+    font-size: 25px; }
+  .header-images-block:not(:last-child), .footer-images-block:not(:last-child) {
+    margin-right: 50px; }
+  .header-buttons-container:not(:last-child), .footer-buttons-container:not(:last-child) {
+    margin-right: 20px; }
+  .about .about-firstRow .about-block:not(:last-child),
+  .about .about-secondRow .about-block:not(:last-child) {
+    margin-right: 15px; }
+  .about .about-secondRow {
+    margin-top: 20px; }
+  .requestForm-form {
+    padding: 30px; }
+    .requestForm-form-column:not(:last-child) {
+      margin-right: 25px; }
+    .requestForm-form-column-row select, .requestForm-form-column-row input, .requestForm-form-column-row textarea {
+      width: 160px; }
+    .requestForm-form-column-row button {
+      width: 160px; }
+  .detailes .container-inner .detailes-row img {
+    width: 20%;
+    height: auto; }
+  .video-wrapper .video-player {
+    width: 480px;
+    height: 290px; }
+  .clients .container-inner {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto; }
+  .consultation .consultation-form .input-container .input-block input {
+    width: 160px; }
+  .consultation .consultation-form button {
+    width: 200px;
+    font-size: 15px; } }
+
+@media (max-width: 567px) {
+  .header-main-text-title, .footer-main-text-title {
+    font-size: 30px; }
+  .header-main-text-subtitle, .footer-main-text-subtitle {
+    font-size: 20px; }
+  .header-images, .footer-images {
+    margin-top: 70px; }
+    .header-images-block-subtitle, .footer-images-block-subtitle {
+      margin-top: 20px; }
+  .header-buttons button, .footer-buttons button {
+    width: 160px; }
+  .video-wrapper .video-player {
+    width: 380px;
+    height: 200px; } }
+
+/*# sourceMappingURL=media.css.map */

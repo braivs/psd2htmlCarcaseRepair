@@ -42,7 +42,7 @@ h2 {
   font-weight: 400; }
 
 .header, .footer {
-  background: url("../img/header-bg.png") no-repeat;
+  background: url("../img/header-bg.png") repeat-y;
   background-position: cover;
   height: 790px;
   color: white; }
@@ -68,7 +68,8 @@ h2 {
     .header-main-text-title, .footer-main-text-title {
       font-size: 48px;
       font-weight: 700;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      text-align: center; }
     .header-main-text-subtitle, .footer-main-text-subtitle {
       font-size: 30px;
       line-height: 46px;
@@ -93,60 +94,63 @@ h2 {
       -webkit-justify-content: space-between;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-right: 100px;
       text-align: center; }
       .header-images-block-subtitle, .footer-images-block-subtitle {
         margin-top: 35px; }
+    .header-images-block:not(:last-child), .footer-images-block:not(:last-child) {
+      margin-right: 100px; }
   .header-buttons, .footer-buttons {
     margin-top: 115px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    .header-buttons-container, .footer-buttons-container {
+    .header-buttons-container-subtitle, .footer-buttons-container-subtitle {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 20px; }
+    .header-buttons-container button, .footer-buttons-container button {
+      width: 240px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: #d91233;
+      border: none;
+      color: white;
+      font-weight: 700; }
+    .header-buttons-container:last-child button, .footer-buttons-container:last-child button {
+      background-color: transparent;
+      border: 1px solid #d91233; }
+    .header-buttons-container:not(:last-child), .footer-buttons-container:not(:last-child) {
       margin-right: 40px; }
-      .header-buttons-container-subtitle, .footer-buttons-container-subtitle {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 20px; }
-      .header-buttons-container button, .footer-buttons-container button {
-        width: 240px;
-        height: 50px;
-        border-radius: 25px;
-        background-color: #d91233;
-        border: none;
-        color: white;
-        font-weight: 700; }
-      .header-buttons-container:last-child button, .footer-buttons-container:last-child button {
-        background-color: transparent;
-        border: 1px solid #d91233; }
 
-section.about {
+.about {
   margin-top: 80px; }
-  section.about .about-firstRow,
-  section.about .about-secondRow {
+  .about .about-firstRow,
+  .about .about-secondRow {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-    section.about .about-firstRow .about-block,
-    section.about .about-secondRow .about-block {
-      text-align: center;
-      margin-right: 90px; }
-      section.about .about-firstRow .about-block-image,
-      section.about .about-secondRow .about-block-image {
+    .about .about-firstRow .about-block,
+    .about .about-secondRow .about-block {
+      text-align: center; }
+      .about .about-firstRow .about-block-image,
+      .about .about-secondRow .about-block-image {
         margin-top: 20px; }
-      section.about .about-firstRow .about-block-title,
-      section.about .about-secondRow .about-block-title {
+      .about .about-firstRow .about-block-title,
+      .about .about-secondRow .about-block-title {
         margin-top: 20px;
         font-size: 16px;
         font-size: 16px;
         font-weight: 700; }
-      section.about .about-firstRow .about-block-subtitle,
-      section.about .about-secondRow .about-block-subtitle {
+      .about .about-firstRow .about-block-subtitle,
+      .about .about-secondRow .about-block-subtitle {
         margin-top: 20px;
         font-size: 14px; }
-  section.about .about-secondRow {
+    .about .about-firstRow .about-block:not(:last-child),
+    .about .about-secondRow .about-block:not(:last-child) {
+      margin-right: 90px; }
+  .about .about-secondRow {
     margin-top: 80px; }
 
 .requestForm {
@@ -164,47 +168,47 @@ section.about {
   .requestForm-form {
     margin-top: 60px;
     padding: 60px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
     border: 5px solid white; }
-    .requestForm-form-column {
+    .requestForm-form-column-row:not(:last-child) {
+      margin-bottom: 20px; }
+    .requestForm-form-column-row .title {
+      font-size: 13px; }
+    .requestForm-form-column-row select, .requestForm-form-column-row input, .requestForm-form-column-row textarea {
+      width: 240px;
+      height: 40px;
+      font-size: 13px; }
+      .requestForm-form-column-row select::-webkit-input-placeholder, .requestForm-form-column-row input::-webkit-input-placeholder, .requestForm-form-column-row textarea::-webkit-input-placeholder {
+        color: #b8b8b8; }
+      .requestForm-form-column-row select::-moz-placeholder, .requestForm-form-column-row input::-moz-placeholder, .requestForm-form-column-row textarea::-moz-placeholder {
+        color: #b8b8b8; }
+      .requestForm-form-column-row select:-ms-input-placeholder, .requestForm-form-column-row input:-ms-input-placeholder, .requestForm-form-column-row textarea:-ms-input-placeholder {
+        color: #b8b8b8; }
+      .requestForm-form-column-row select::-ms-input-placeholder, .requestForm-form-column-row input::-ms-input-placeholder, .requestForm-form-column-row textarea::-ms-input-placeholder {
+        color: #b8b8b8; }
+      .requestForm-form-column-row select::placeholder, .requestForm-form-column-row input::placeholder, .requestForm-form-column-row textarea::placeholder {
+        color: #b8b8b8; }
+    .requestForm-form-column-row input {
+      padding-left: 15px; }
+    .requestForm-form-column-row textarea {
+      height: 115px;
+      resize: none;
+      padding: 15px 0 0 15px; }
+    .requestForm-form-column-row button {
+      display: block;
+      margin-top: 30px;
+      width: 240px;
+      height: 50px;
+      border-radius: 25px;
+      background-color: #d91233;
+      border: none;
+      color: white;
+      font-weight: 700; }
+    .requestForm-form-column:not(:last-child) {
       margin-right: 50px; }
-      .requestForm-form-column-row:not(:last-child) {
-        margin-bottom: 20px; }
-      .requestForm-form-column-row .title {
-        font-size: 13px; }
-      .requestForm-form-column-row select, .requestForm-form-column-row input, .requestForm-form-column-row textarea {
-        width: 240px;
-        height: 40px;
-        font-size: 13px; }
-        .requestForm-form-column-row select::-webkit-input-placeholder, .requestForm-form-column-row input::-webkit-input-placeholder, .requestForm-form-column-row textarea::-webkit-input-placeholder {
-          color: #b8b8b8; }
-        .requestForm-form-column-row select::-moz-placeholder, .requestForm-form-column-row input::-moz-placeholder, .requestForm-form-column-row textarea::-moz-placeholder {
-          color: #b8b8b8; }
-        .requestForm-form-column-row select:-ms-input-placeholder, .requestForm-form-column-row input:-ms-input-placeholder, .requestForm-form-column-row textarea:-ms-input-placeholder {
-          color: #b8b8b8; }
-        .requestForm-form-column-row select::-ms-input-placeholder, .requestForm-form-column-row input::-ms-input-placeholder, .requestForm-form-column-row textarea::-ms-input-placeholder {
-          color: #b8b8b8; }
-        .requestForm-form-column-row select::placeholder, .requestForm-form-column-row input::placeholder, .requestForm-form-column-row textarea::placeholder {
-          color: #b8b8b8; }
-      .requestForm-form-column-row input {
-        padding-left: 15px; }
-      .requestForm-form-column-row textarea {
-        height: 115px;
-        resize: none;
-        padding: 15px 0 0 15px; }
-      .requestForm-form-column-row button {
-        display: block;
-        margin-top: 30px;
-        width: 240px;
-        height: 50px;
-        border-radius: 25px;
-        background-color: #d91233;
-        border: none;
-        color: white;
-        font-weight: 700; }
 
 .detailes {
   margin-top: 80px; }
@@ -226,16 +230,19 @@ section.about {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .detailes .container-inner .detailes-row {
+      text-align: center; }
+      .detailes .container-inner .detailes-row img:not(:last-child) {
+        margin-right: 20px; }
     .detailes .container-inner .detailes-row:not(:first-child) {
       margin-top: 20px; }
-      .detailes .container-inner .detailes-row:not(:first-child) img {
-        margin-right: 20px; }
 
 .video {
   margin-top: 80px; }
   .video-title {
     font-size: 30px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-align: center; }
   .video-wrapper {
     padding: 15px;
     border: 5px solid #f2f2f2;
@@ -245,15 +252,15 @@ section.about {
       height: 390px;
       background-color: #3b3b3b; }
 
-section.clients.container {
+.clients {
   background-color: #ebebeb;
   margin-top: 80px;
   padding-top: 80px;
   padding-bottom: 80px; }
-  section.clients.container h1 {
+  .clients h1 {
     font-size: 30px;
     font-weight: 700; }
-  section.clients.container .container-inner {
+  .clients .container-inner {
     padding-top: 60px;
     display: -ms-grid;
     display: grid;
@@ -262,22 +269,22 @@ section.clients.container {
     -ms-grid-columns: auto auto;
     grid-template-columns: auto auto;
     gap: 50px; }
-    section.clients.container .container-inner .clients-block {
+    .clients .container-inner .clients-block {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
-      section.clients.container .container-inner .clients-block-main {
+      .clients .container-inner .clients-block-main {
         margin-left: 20px; }
-        section.clients.container .container-inner .clients-block-main-title {
+        .clients .container-inner .clients-block-main-title {
           color: #757575;
           font-size: 12px; }
-        section.clients.container .container-inner .clients-block-main-subtitle {
+        .clients .container-inner .clients-block-main-subtitle {
           margin-top: 5px;
           color: #d91233;
           font-size: 16px;
           font-weight: 700; }
-        section.clients.container .container-inner .clients-block-main-text {
+        .clients .container-inner .clients-block-main-text {
           margin-top: 10px;
           color: #2b2b2b;
           font-size: 13px;
@@ -331,7 +338,7 @@ section.clients.container {
 
 .map {
   background: url("../img/map.jpg") no-repeat;
-  background-position: cover;
+  background-position: center;
   height: 500px;
   position: relative; }
   .map-block {

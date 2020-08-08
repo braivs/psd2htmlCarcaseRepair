@@ -1,0 +1,111 @@
+@media (max-width: 992px)
+    .header,.footer
+        height: auto
+        &-top
+            &-logo
+                margin-right: 100px
+        &-buttons
+            margin-top: 80px
+            padding-bottom: 25px
+
+    .requestForm
+        &-form
+            grid-template-columns: auto auto
+            grid-row-gap: 10px
+
+    .video
+        &-wrapper
+            .video-player
+                width: 680px
+                height: 290px
+    
+    .clients
+        .container-inner
+            gap: 15px
+            padding: 15px 15px 0
+
+    .consultation 
+        .consultation-form
+            padding: 30px
+
+@media (max-width: 768px)
+    .header,.footer
+        &-main-text
+            &-title
+                font-size: 38px
+            &-subtitle
+                font-size: 25px
+        &-images
+            &-block:not(:last-child)
+                margin-right: 50px
+        &-buttons
+            &-container:not(:last-child)
+                margin-right: 20px
+
+    .about
+        .about-firstRow,
+        .about-secondRow
+            .about-block:not(:last-child)
+                margin-right: 15px
+        .about-secondRow
+            margin-top: 20px    
+
+    .requestForm
+        &-form
+            padding: 30px
+            &-column:not(:last-child)
+                margin-right: 25px
+            &-column
+                &-row
+                    select, input, textarea
+                        width: 160px
+                    button
+                        width: 160px
+    
+    .detailes
+        .container-inner
+            .detailes-row
+                img
+                    width: 20%
+                    height: auto
+
+    .video
+        &-wrapper
+            .video-player
+                width: 480px
+                height: 290px
+
+    .clients
+        .container-inner
+            grid-template-columns: auto
+
+    .consultation 
+        .consultation-form
+            .input-container
+                .input-block
+                    input
+                        width: 160px
+            button
+                width: 200px
+                font-size: 15px
+
+@media (max-width: 567px)
+    .header,.footer
+        &-main-text
+            &-title
+                font-size: 30px
+            &-subtitle
+                font-size: 20px
+        &-images
+            margin-top: 70px
+            &-block
+                &-subtitle
+                    margin-top: 20px
+        &-buttons
+            button
+                width: 160px
+    .video
+        &-wrapper
+            .video-player
+                width: 380px
+                height: 200px
