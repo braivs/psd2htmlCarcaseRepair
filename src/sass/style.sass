@@ -22,10 +22,12 @@ h1,h2
 h1
     font-size: 30px
     font-weight: 700
+    text-align: center
 h2 
     font-size: 16px
     margin-top: 20px
     font-weight: 400
+    text-align: center
 .header,.footer
     background: url('../img/header-bg.png') repeat-y 
     background-position: cover
@@ -244,7 +246,6 @@ h2
         .input-container
             display: flex
             .input-block
-                margin-right: 40px
                 .input-title
                     font-size: 13px
                     margin-bottom: 7px
@@ -253,6 +254,8 @@ h2
                     height: 45px
                     border: none
                     padding-left: 15px 
+            .input-block:not(:last-child)
+                margin-right: 40px
         button
             margin-top: 40px
             width: 300px
