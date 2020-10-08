@@ -47,7 +47,7 @@
       </div>
       <div class="header-buttons">
         <div class="header-buttons-container">
-          <button>Быстрая заявка</button>
+          <button class="openPopupQuickCall">Быстрая заявка</button>
           <div class="header-buttons-container-subtitle">
             Мы перезвоним Вам<br>
             для уточнения деталей.
@@ -269,6 +269,29 @@
         <div class="map-block-email">info@sitename.ru</div>
       </div>
     </section>
+    <section class="popup popupBidConfirm">
+      <h1>Спасибо за вашу заявку!</h1>
+      <p>Мы свяжемся с Вами в ближайшее время!</p><a class="closePopupConfirm" href="#"><img src="img/closePopup.png" alt="closePopup"/></a>
+    </section>
+    <section class="popup popupCall">
+      <h1>Заказ обратного звонка</h1>
+      <p>Оставьте заявку и мы Вам перезвоним!</p><a class="closePopupCall" href="#"><img src="img/closePopup.png" alt="closePopup"/></a>
+      <form>
+        <input class="name" type="text" placeholder="Ваше имя" required="required"/>
+        <input class="phone" type="text" placeholder="Ваш телефон" required="required"/>
+        <input class="mail" type="text" placeholder="Ваша почта" required="required"/>
+        <button class="popupCallSend">Отправить заявку</button>
+      </form>
+    </section>
+    <section class="popup popupQuickCall">
+      <h1>Быстрая заявка</h1>
+      <p>Оставьте заявку и мы Вам перезвоним!</p><a class="closePopupQuickCall" href="#"><img src="img/closePopup.png" alt="closePopup"/></a>
+      <form>
+        <input class="name" type="text" placeholder="Ваше имя" required="required"/>
+        <input class="phone" type="text" placeholder="Ваш телефон" required="required"/>
+        <button>Отправить заявку</button>
+      </form>
+    </section>
     <footer class="container">
       <div class="footer-top">
         <div class="footer-top-logo">ЛОГОТИП</div>
@@ -277,6 +300,7 @@
           <div class="footer-top-contact-subtitle">Заказать обратный звонок</div>
         </div>
       </div>
+      <script src="/js/script.js"></script>
     </footer>
   </body>
 </html>

@@ -43,6 +43,19 @@ h2 {
   font-weight: 400;
   text-align: center; }
 
+p {
+  margin: 0;
+  padding: 0; }
+
+button {
+  border-radius: 25px;
+  background-color: #d91233;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer; }
+
 .header, .footer {
   background: url("../img/header-bg.png") repeat-y;
   background-position: cover;
@@ -64,7 +77,8 @@ h2 {
     .header-top-contact-subtitle, .footer-top-contact-subtitle {
       color: #d91233;
       font-size: 16px;
-      text-decoration: underline; }
+      text-decoration: underline;
+      cursor: pointer; }
   .header-main-text, .footer-main-text {
     margin-top: 113px; }
     .header-main-text-title, .footer-main-text-title {
@@ -113,12 +127,7 @@ h2 {
       margin-top: 20px; }
     .header-buttons-container button, .footer-buttons-container button {
       width: 240px;
-      height: 50px;
-      border-radius: 25px;
-      background-color: #d91233;
-      border: none;
-      color: white;
-      font-weight: 700; }
+      height: 50px; }
     .header-buttons-container:last-child button, .footer-buttons-container:last-child button {
       background-color: transparent;
       border: 1px solid #d91233; }
@@ -200,15 +209,8 @@ h2 {
       resize: none;
       padding: 15px 0 0 15px; }
     .requestForm-form-column-row button {
-      display: block;
-      margin-top: 30px;
       width: 240px;
-      height: 50px;
-      border-radius: 25px;
-      background-color: #d91233;
-      border: none;
-      color: white;
-      font-weight: 700; }
+      height: 50px; }
     .requestForm-form-column:not(:last-child) {
       margin-right: 50px; }
 
@@ -331,13 +333,7 @@ h2 {
     .consultation .consultation-form button {
       margin-top: 40px;
       width: 300px;
-      height: 50px;
-      border-radius: 25px;
-      background-color: #d91233;
-      border: none;
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: 700; }
+      height: 50px; }
 
 .map {
   background: url("../img/map.jpg") no-repeat;
@@ -364,13 +360,113 @@ h2 {
     .map-block-tel {
       font-weight: 700; }
     .map-block-email {
-      text-decoration: underline; }
+      text-decoration: underline;
+      cursor: pointer; }
     .map-block-text, .map-block-tel, .map-block-email {
       font-size: 20px; }
     .map-block-text, .map-block-tel {
       margin-bottom: 30px; }
 
+section.popup {
+  width: 320px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  section.popup h1 {
+    font-size: 14px; }
+  section.popup p {
+    margin-top: 6px;
+    font-size: 12px;
+    text-align: center; }
+  section.popup a {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%); }
+  section.popup form {
+    margin-top: 16px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    section.popup form input {
+      margin-bottom: 10px;
+      height: 40px;
+      border: 1px solid #d0d0d0;
+      padding-left: 15px; }
+      section.popup form input::-webkit-input-placeholder {
+        color: #676767;
+        font-size: 12px; }
+      section.popup form input::-moz-placeholder {
+        color: #676767;
+        font-size: 12px; }
+      section.popup form input:-ms-input-placeholder {
+        color: #676767;
+        font-size: 12px; }
+      section.popup form input::-ms-input-placeholder {
+        color: #676767;
+        font-size: 12px; }
+      section.popup form input::placeholder {
+        color: #676767;
+        font-size: 12px; }
+      section.popup form input:invalid {
+        box-shadow: none; }
+      section.popup form input.name {
+        background: url("../img/popupIconName.png") no-repeat center right 15px; }
+      section.popup form input.phone {
+        background: url("../img/popupIconPhone.png") no-repeat center right 15px; }
+      section.popup form input.mail {
+        background: url("../img/popupIconMail.png") no-repeat center right 15px; }
+    section.popup form button {
+      width: 220px;
+      height: 45px; }
+
+.popupBidConfirm {
+  visibility: hidden;
+  height: 120px; }
+  .popupBidConfirm p {
+    width: 200px; }
+
+.popupCall {
+  visibility: hidden;
+  height: 330px; }
+
+.popupQuickCall {
+  visibility: hidden;
+  height: 280px; }
+
 footer {
   margin-bottom: 30px; }
+  footer .footer-top-contact-subtitle {
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

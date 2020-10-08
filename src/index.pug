@@ -39,7 +39,7 @@ html(lang="en")
                         |различных деталей
             .header-buttons
                 .header-buttons-container
-                    button Быстрая заявка
+                    button.openPopupQuickCall Быстрая заявка
                     .header-buttons-container-subtitle
                         |Мы перезвоним Вам<br>
                         |для уточнения деталей.
@@ -229,13 +229,37 @@ html(lang="en")
                 .map-block-text г. Москва, ул. Дорожная, 8, к.1
                 .map-block-tel 8 800 123 43 34
                 .map-block-email info@sitename.ru
-
+        section.popup.popupBidConfirm
+            h1 Спасибо за вашу заявку!
+            p Мы свяжемся с Вами в ближайшее время!
+            a.closePopupConfirm(href="#")
+                img(src="img/closePopup.png", alt="closePopup")
+        section.popup.popupCall
+            h1 Заказ обратного звонка
+            p Оставьте заявку и мы Вам перезвоним!
+            a.closePopupCall(href="#")
+                img(src="img/closePopup.png", alt="closePopup")
+            form
+                input.name(type="text", placeholder="Ваше имя", required)
+                input.phone(type="text", placeholder="Ваш телефон", required)
+                input.mail(type="text", placeholder="Ваша почта", required)
+                button.popupCallSend Отправить заявку
+        section.popup.popupQuickCall
+            h1 Быстрая заявка
+            p Оставьте заявку и мы Вам перезвоним!
+            a.closePopupQuickCall(href="#")
+                img(src="img/closePopup.png", alt="closePopup")
+            form
+                input.name(type="text", placeholder="Ваше имя", required)
+                input.phone(type="text", placeholder="Ваш телефон", required)
+                button Отправить заявку
         footer.container
             .footer-top
                 .footer-top-logo ЛОГОТИП
                 .footer-top-contact 
                     .footer-top-contact-title 8 800 232 32 12
                     .footer-top-contact-subtitle Заказать обратный звонок
+            script(src="/js/script.js")
 
 
 
