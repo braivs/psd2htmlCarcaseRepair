@@ -1,11 +1,11 @@
 //окно popupCall 
 let popupCall = document.querySelector(".popupCall");
-//Клик по строке в заголовке "Заказать обратный звонок"
+//Клик по строке в хэдере "Заказать обратный звонок"
 let openPopupCall1 = document.querySelector(".header-top-contact-subtitle");
 openPopupCall1.onclick = function(event) {
     popupCall.style.visibility="visible";
 }
-//Нажатие на крестик в popupCall
+//Клик на крестик в popupCall
 let closePopupCall = document.querySelector(".closePopupCall");
 closePopupCall.onclick = function(event) {
     event.preventDefault();
@@ -20,9 +20,10 @@ popupCall.onsubmit = function(event) {
 }
 //Окно popupBidConfirm
 let popupBidConfirm = document.querySelector(".popupBidConfirm");
-//Нажатие на крестик в popupBidConfirm
+//Клик на крестик в popupBidConfirm
 let closePopupConfirm = document.querySelector(".closePopupConfirm");
 closePopupConfirm.onclick = function(event) {
+    event.preventDefault();
     popupBidConfirm.style.visibility="hidden";
 }
 
@@ -40,8 +41,31 @@ closePopupQuickCall.onclick = function(event) {
     event.preventDefault();
     popupQuickCall.style.visibility="hidden";
 }
+//Переходной к Подробной заявке
+let goToBullBid = document.querySelector(".goToBullBid");
+goToBullBid.onclick = function(event) {
+    event.preventDefault();
+    document.location.href="#fullBid";
+}
+//Клик на Узнать цену = открытие popupBidConfirm
+let openPopupConfirm1 = document.querySelector(".openPopupConfirm1");
+openPopupConfirm1.onclick = function(event) {
+    event.preventDefault();
+    popupBidConfirm.style.visibility="visible";
+}
+//Клик на Заказать консультацию = открытие popupBidConfirm
+let openPopupConfirm2 = document.querySelector(".openPopupConfirm2");
+openPopupConfirm2.onclick = function(event) {
+    event.preventDefault();
+    popupBidConfirm.style.visibility="visible";
+}
+//Клик по строке в футере "Заказать обратный звонок"
+let openPopupCall2 = document.querySelector(".footer-top-contact-subtitle");
+openPopupCall2.onclick = function(event) {
+    popupCall.style.visibility="visible";
+}
 
-//Нажатие на Esc для всех окон
+//Клик на Esc для всех окон
 addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
         popupCall.style.visibility="hidden";

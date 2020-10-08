@@ -44,7 +44,7 @@ html(lang="en")
                         |Мы перезвоним Вам<br>
                         |для уточнения деталей.
                 .header-buttons-container
-                    button Подробная заявка
+                    button.goToBullBid Подробная заявка
                     .header-buttons-container-subtitle
                         |Заполните подробную<br>
                         |заявку онлайн!
@@ -94,6 +94,7 @@ html(lang="en")
                         |все необходимые документы
         
         section.requestForm.container
+            a(name="fullBid")
             .requestForm-top
                 .requestForm-top-title Подробная заявка
                 .requestForm-top-subtitle Заполните форму и получите максимально точную цену!
@@ -131,7 +132,7 @@ html(lang="en")
                     .requestForm-form-column-row
                         .title Ваш e-mail:
                         input(type="email")
-                        button Узнать цену
+                        button.openPopupConfirm1 Узнать цену
 
         section.detailes.container
             .detailes-title Имеем в наличии детали на авто:
@@ -221,7 +222,7 @@ html(lang="en")
                     .input-block
                         .input-title Ваш телефон:
                         input(type="tel")
-                button Заказать консультацию
+                button.openPopupConfirm2 Заказать консультацию
         
         section.map.container
             .map-block
