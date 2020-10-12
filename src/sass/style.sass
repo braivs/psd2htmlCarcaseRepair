@@ -141,32 +141,72 @@ button
         margin-top: 60px
         padding: 60px
         display: grid
-        grid-template-columns: auto auto auto
+        grid-template-columns: repeat(3, auto)
+        grid-template-rows: repeat(3, auto)
+        column-gap: 50px
+        row-gap: 20px
         border: 5px solid white
-        &-column
-            // margin-right: 50px
-            &-row:not(:last-child)
-                margin-bottom: 20px
-            &-row
-                .title
-                    font-size: 13px
-                select, input, textarea
-                    width: 240px
-                    height: 40px
-                    font-size: 13px
-                    &::placeholder
-                        color: #b8b8b8
-                input
-                    padding-left: 15px 
-                textarea
-                    height: 115px
-                    resize: none
-                    padding: 15px 0 0 15px
-                button
-                    width: 240px
-                    height: 50px
-        &-column:not(:last-child)
-            margin-right: 50px
+        .title
+            font-size: 13px
+            margin-bottom: 5px
+        select, input, textarea
+            width: 240px
+            padding-left: 15px
+            font-size: 12px
+        select, input
+            height: 40px
+        textarea
+            height: 120px
+            padding-top: 12px
+        button
+            height: 50px
+        &-label
+            grid-column: 1 / 2
+            grid-row: 1 / 2
+        &-model
+            grid-column: 1 / 2
+            grid-row: 2 / 3
+        &-yeah
+            grid-column: 1 / 2
+            grid-row: 3 / 4
+        &-detailes
+            align-self: start
+            grid-column: 2 / 3
+            grid-row: 1 / 3
+        &-name
+            grid-column: 2 / 3
+            grid-row: 3 / 4
+        &-phone
+            grid-column: 3 / 4
+            grid-row: 1 / 2
+        &-email
+            grid-column: 3 / 4
+            grid-row: 2 / 3
+        &-button
+            grid-column: 3 / 4
+            grid-row: 3 / 4
+            align-self: end
+             // &-column
+        //     &-row:not(:last-child)
+        //         margin-bottom: 20px
+        //     &-row
+        //         select, input, textarea
+        //             width: 240px
+        //             height: 40px
+        //             font-size: 13px
+        //             &::placeholder
+        //                 color: #b8b8b8
+        //         input
+        //             padding-left: 15px 
+        //         textarea
+        //             height: 115px
+        //             resize: none
+        //             padding: 15px 0 0 15px
+        //         button
+        //             width: 240px
+        //             height: 50px
+        // &-column:not(:last-child)
+        //     margin-right: 50px
 
 .detailes
     margin-top: 80px

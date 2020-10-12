@@ -120,53 +120,47 @@
         <div class="requestForm-top-subtitle">Заполните форму и получите максимально точную цену!</div>
       </div>
       <form class="requestForm-form" action="">
-        <div class="requestForm-form-column">
-          <div class="requestForm-form-column-row">
-            <div class="title">Марка:</div>
-            <select> 
-              <option selected="selected">Выберите марку</option>
-              <option>Audi</option>
-              <option>Mercedes-Benz</option>
-            </select>
-          </div>
-          <div class="requestForm-form-column-row">
-            <div class="title">Модель:</div>
-            <select> 
-              <option selected="selected">Выберите модель</option>
-              <option>Audi A4</option>
-              <option>Audi A3</option>
-            </select>
-          </div>
-          <div class="requestForm-form-column-row">
-            <div class="title">Год выпуска:</div>
-            <select> 
-              <option selected="selected">Выберите год</option>
-              <option>2009</option>
-              <option>2020</option>
-            </select>
-          </div>
+        <div class="requestForm-form-label">
+          <div class="title">Марка:</div>
+          <select> 
+            <option selected="selected">Выберите марку</option>
+            <option>Audi</option>
+            <option>Mercedes-Benz</option>
+          </select>
         </div>
-        <div class="requestForm-form-column">
-          <div class="requestForm-form-column-row">
-            <div class="title">Необходимые детали:</div>
-            <textarea placeholder="Введите"></textarea>
-          </div>
-          <div class="requestForm-form-column-row">
-            <div class="title">Ваше имя:</div>
-            <input type="text" placeholder="Введите"/>
-          </div>
+        <div class="requestForm-form-model">
+          <div class="title">Модель:</div>
+          <select> 
+            <option selected="selected">Выберите модель</option>
+            <option>Audi A4</option>
+            <option>Audi A3</option>
+          </select>
         </div>
-        <div class="requestForm-form-column">
-          <div class="requestForm-form-column-row">
-            <div class="title">Ваш телефон:</div>
-            <input type="tel"/>
-          </div>
-          <div class="requestForm-form-column-row">
-            <div class="title">Ваш e-mail:</div>
-            <input type="email"/>
-            <button class="openPopupConfirm2">Узнать цену</button>
-          </div>
+        <div class="requestForm-form-yeah">
+          <div class="title">Год выпуска:</div>
+          <select class="year"> 
+            <option selected="selected">Выберите год</option>
+            <option>2009</option>
+            <option>2020</option>
+          </select>
         </div>
+        <div class="requestForm-form-detailes">
+          <div class="title">Необходимые детали:</div>
+          <textarea placeholder="Введите"></textarea>
+        </div>
+        <div class="requestForm-form-name">
+          <div class="title name">Ваше имя:</div>
+          <input class="name" type="text" placeholder="Введите" required="required"/>
+        </div>
+        <div class="requestForm-form-phone">
+          <div class="title">Ваш телефон:</div>
+          <input type="tel" placeholder="+7 (9__) ___-__-__"/>
+        </div>
+        <div class="requestForm-form-email">
+          <div class="title">Ваш e-mail:</div>
+          <input type="email" placeholder="Введите"/>
+        </div>
+        <button class="requestForm-form-button openPopupConfirm2">Узнать цену</button>
       </form>
     </section>
     <section class="detailes container">

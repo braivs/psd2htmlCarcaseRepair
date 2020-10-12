@@ -181,38 +181,89 @@ button {
     padding: 60px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto auto auto;
-    grid-template-columns: auto auto auto;
+    -ms-grid-columns: (auto)[3];
+    grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    row-gap: 20px;
     border: 5px solid white; }
-    .requestForm-form-column-row:not(:last-child) {
-      margin-bottom: 20px; }
-    .requestForm-form-column-row .title {
-      font-size: 13px; }
-    .requestForm-form-column-row select, .requestForm-form-column-row input, .requestForm-form-column-row textarea {
+    .requestForm-form .title {
+      font-size: 13px;
+      margin-bottom: 5px; }
+    .requestForm-form select, .requestForm-form input, .requestForm-form textarea {
       width: 240px;
-      height: 40px;
-      font-size: 13px; }
-      .requestForm-form-column-row select::-webkit-input-placeholder, .requestForm-form-column-row input::-webkit-input-placeholder, .requestForm-form-column-row textarea::-webkit-input-placeholder {
-        color: #b8b8b8; }
-      .requestForm-form-column-row select::-moz-placeholder, .requestForm-form-column-row input::-moz-placeholder, .requestForm-form-column-row textarea::-moz-placeholder {
-        color: #b8b8b8; }
-      .requestForm-form-column-row select:-ms-input-placeholder, .requestForm-form-column-row input:-ms-input-placeholder, .requestForm-form-column-row textarea:-ms-input-placeholder {
-        color: #b8b8b8; }
-      .requestForm-form-column-row select::-ms-input-placeholder, .requestForm-form-column-row input::-ms-input-placeholder, .requestForm-form-column-row textarea::-ms-input-placeholder {
-        color: #b8b8b8; }
-      .requestForm-form-column-row select::placeholder, .requestForm-form-column-row input::placeholder, .requestForm-form-column-row textarea::placeholder {
-        color: #b8b8b8; }
-    .requestForm-form-column-row input {
-      padding-left: 15px; }
-    .requestForm-form-column-row textarea {
-      height: 115px;
-      resize: none;
-      padding: 15px 0 0 15px; }
-    .requestForm-form-column-row button {
-      width: 240px;
+      padding-left: 15px;
+      font-size: 12px; }
+    .requestForm-form select, .requestForm-form input {
+      height: 40px; }
+    .requestForm-form textarea {
+      height: 120px;
+      padding-top: 12px; }
+    .requestForm-form button {
       height: 50px; }
-    .requestForm-form-column:not(:last-child) {
-      margin-right: 50px; }
+    .requestForm-form-label {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1 / 2;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1 / 2; }
+    .requestForm-form-model {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1 / 2;
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2 / 3; }
+    .requestForm-form-yeah {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1 / 2;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4; }
+    .requestForm-form-detailes {
+      -ms-grid-row-align: start;
+          align-self: start;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2 / 3;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 2;
+      grid-row: 1 / 3; }
+    .requestForm-form-name {
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 1;
+      grid-column: 2 / 3;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4; }
+    .requestForm-form-phone {
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+      grid-column: 3 / 4;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1 / 2; }
+    .requestForm-form-email {
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+      grid-column: 3 / 4;
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2 / 3; }
+    .requestForm-form-button {
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 1;
+      grid-column: 3 / 4;
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4;
+      -ms-grid-row-align: end;
+          align-self: end; }
 
 .detailes {
   margin-top: 80px; }
