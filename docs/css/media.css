@@ -250,4 +250,83 @@
   section.popup {
     width: 260px; } }
 
+@media (max-width: 349px) {
+  .header-top-logo {
+    margin-right: 10px; }
+  .header-top-contact-title {
+    font-size: 15px; }
+  .header-main-text-title {
+    font-size: 18px; }
+  .header-main-text-subtitle {
+    line-height: 15px;
+    font-size: 13px; }
+  .header-buttons-container button {
+    font-size: 11px;
+    width: 120px; }
+  .header-buttons-container-subtitle {
+    font-size: 10px; }
+  .about .about-firstRow,
+  .about .about-secondRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .requestForm-top-subtitle {
+    text-align: center; }
+  .requestForm-form {
+    margin-top: 10px;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    -ms-grid-rows: (auto)[8];
+    grid-template-rows: repeat(8, auto);
+    row-gap: 10px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0; }
+    .requestForm-form textarea {
+      width: 150px; }
+    .requestForm-form-label, .requestForm-form-model, .requestForm-form-yeah, .requestForm-form-phone, .requestForm-form-email, .requestForm-form-detailes, .requestForm-form-name, .requestForm-form-button {
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 2;
+      grid-column: 1 / 3;
+      -ms-grid-column-align: center;
+          justify-self: center; }
+    .requestForm-form-label {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1 / 2; }
+    .requestForm-form-model {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2 / 3; }
+    .requestForm-form-yeah {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3 / 4; }
+    .requestForm-form-phone {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      grid-row: 4 / 5; }
+    .requestForm-form-email {
+      -ms-grid-row: 5;
+      -ms-grid-row-span: 1;
+      grid-row: 5 / 6; }
+    .requestForm-form-detailes {
+      -ms-grid-row: 6;
+      -ms-grid-row-span: 1;
+      grid-row: 6 / 7; }
+    .requestForm-form-name {
+      -ms-grid-row: 7;
+      -ms-grid-row-span: 1;
+      grid-row: 7 / 8; }
+    .requestForm-form-button {
+      -ms-grid-row: 8;
+      -ms-grid-row-span: 1;
+      grid-row: 8 / 9; }
+  footer .footer-top-logo {
+    margin-right: 10px; }
+  footer .footer-top-contact-title {
+    font-size: 15px; } }
+
 /*# sourceMappingURL=media.css.map */

@@ -245,3 +245,66 @@
                     margin-bottom: 10px
     section.popup
         width: 260px                 
+@media (max-width: 349px)
+    .header
+        &-top 
+            &-logo
+                margin-right: 10px
+            &-contact
+                &-title
+                    font-size: 15px
+        &-main-text
+            &-title
+                font-size: 18px
+            &-subtitle
+                line-height: 15px
+                font-size: 13px
+        &-buttons
+            &-container
+                button
+                    font-size: 11px
+                    width: 120px
+                &-subtitle
+                    font-size: 10px
+    .about 
+        .about-firstRow,
+        .about-secondRow
+            flex-direction: column
+    .requestForm
+        &-top 
+            &-subtitle
+                text-align: center
+        &-form
+            margin-top: 10px
+            grid-template-columns: auto auto
+            grid-template-rows: repeat(8, auto)
+            row-gap: 10px
+            column-gap: 0
+            textarea
+                width: 150px
+            &-label, &-model, &-yeah, &-phone, &-email, &-detailes, &-name, &-button
+                grid-column: 1 / 3
+                justify-self: center
+            &-label
+                grid-row: 1 / 2
+            &-model
+                grid-row: 2 / 3
+            &-yeah
+                grid-row: 3 / 4
+            &-phone
+                grid-row: 4 / 5
+            &-email
+                grid-row: 5 / 6
+            &-detailes
+                grid-row: 6 / 7
+            &-name
+                grid-row: 7 / 8
+            &-button
+                grid-row: 8 / 9
+    footer
+        .footer-top
+            &-logo
+                margin-right: 10px
+            &-contact
+                &-title
+                    font-size: 15px
