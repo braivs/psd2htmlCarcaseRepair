@@ -165,10 +165,8 @@ button {
     margin-top: 80px; }
 
 .requestForm {
-  margin-top: 80px;
-  padding-top: 80px;
   background-color: #ebebeb;
-  padding-bottom: 80px; }
+  padding: 80px; }
   .requestForm-top-title {
     font-size: 30px;
     font-weight: 700;
