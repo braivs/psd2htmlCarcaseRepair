@@ -147,6 +147,7 @@
                 &-subtitle
                     font-size: 12px
         &-main-text
+            margin-top: 50px
             &-title
                 font-size: 27px
             &-subtitle
@@ -156,6 +157,7 @@
             flex-direction: column
             width: 100%
             &-block
+                margin-bottom: 10px
                 &:nth-of-type(3)
                     margin-left: 0
                 &-subtitle
@@ -163,7 +165,7 @@
             &-block:not(:last-child)
                 margin-right: 0
         &-buttons
-            margin-top: 30px
+            margin-top: 15px
             button
                 width: 160px
     
@@ -212,7 +214,11 @@
                     margin: 0
 
     .video
+        // width: 100%
         &-wrapper
+            width: 95%
+            display: flex
+            justify-content: center
             .video-player
                 width: 320px
                 height: 190px
@@ -223,7 +229,8 @@
     .consultation
         padding: 40px 0
         .consultation-form
-            margin-top: 30px
+            margin: 30px 5px 0 5px
+            width: 95%
             .input-container
                 flex-direction: column
                 padding: 0 20px
@@ -231,7 +238,6 @@
                     text-align: center
                     input
                         width: 200px
-                        padding: 0
                     .input-title:last-child
                         margin-top: 10px
                 .input-block:not(:last-child)

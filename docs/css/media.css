@@ -133,10 +133,12 @@
     font-size: 20px; }
   .header-top-contact-subtitle, .footer-top-contact-subtitle {
     font-size: 12px; }
-  .header-main-text-title, .footer-main-text-title {
-    font-size: 27px; }
-  .header-main-text-subtitle, .footer-main-text-subtitle {
-    font-size: 17px; }
+  .header-main-text, .footer-main-text {
+    margin-top: 50px; }
+    .header-main-text-title, .footer-main-text-title {
+      font-size: 27px; }
+    .header-main-text-subtitle, .footer-main-text-subtitle {
+      font-size: 17px; }
   .header-images, .footer-images {
     margin-top: 30px;
     -webkit-box-orient: vertical;
@@ -145,14 +147,16 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%; }
-    .header-images-block:nth-of-type(3), .footer-images-block:nth-of-type(3) {
-      margin-left: 0; }
-    .header-images-block-subtitle, .footer-images-block-subtitle {
-      margin-top: 20px; }
+    .header-images-block, .footer-images-block {
+      margin-bottom: 10px; }
+      .header-images-block:nth-of-type(3), .footer-images-block:nth-of-type(3) {
+        margin-left: 0; }
+      .header-images-block-subtitle, .footer-images-block-subtitle {
+        margin-top: 20px; }
     .header-images-block:not(:last-child), .footer-images-block:not(:last-child) {
       margin-right: 0; }
   .header-buttons, .footer-buttons {
-    margin-top: 30px; }
+    margin-top: 15px; }
     .header-buttons button, .footer-buttons button {
       width: 160px; }
   .about {
@@ -207,15 +211,26 @@
     margin-top: 40px; }
     .detailes .container-inner .detailes-row img:not(:last-child) {
       margin: 0; }
-  .video-wrapper .video-player {
-    width: 320px;
-    height: 190px; }
+  .video-wrapper {
+    width: 95%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .video-wrapper .video-player {
+      width: 320px;
+      height: 190px; }
   .clients {
     padding: 40px 0; }
   .consultation {
     padding: 40px 0; }
     .consultation .consultation-form {
-      margin-top: 30px; }
+      margin: 30px 5px 0 5px;
+      width: 95%; }
       .consultation .consultation-form .input-container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -226,8 +241,7 @@
         .consultation .consultation-form .input-container .input-block {
           text-align: center; }
           .consultation .consultation-form .input-container .input-block input {
-            width: 200px;
-            padding: 0; }
+            width: 200px; }
           .consultation .consultation-form .input-container .input-block .input-title:last-child {
             margin-top: 10px; }
         .consultation .consultation-form .input-container .input-block:not(:last-child) {
