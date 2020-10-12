@@ -265,13 +265,15 @@
     width: 120px; }
   .header-buttons-container-subtitle {
     font-size: 10px; }
-  .about .about-firstRow,
-  .about .about-secondRow {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+  .about {
+    margin-top: 20px; }
+    .about .about-firstRow,
+    .about .about-secondRow {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
   .requestForm-top-subtitle {
     text-align: center; }
   .requestForm-form {
