@@ -64,15 +64,17 @@ goToBullBid.onclick = function(event) {
     document.location.href="#fullBid";
 }
 //Клик на Узнать цену = открытие popupBidConfirm
+let requestFormForm = document.querySelector(".requestForm-form");
 let openPopupConfirm2 = document.querySelector(".openPopupConfirm2");
-openPopupConfirm2.onclick = function(event) {
+requestFormForm.onsubmit = function(event) {
     event.preventDefault();
     popupBidConfirm.style.visibility="visible";
     backgroundHalfDark.style.visibility="visible";
 }
 //Клик на Заказать консультацию = открытие popupBidConfirm
+let consultationForm = document.querySelector(".consultation-form");
 let openPopupConfirm3 = document.querySelector(".openPopupConfirm3");
-openPopupConfirm3.onclick = function(event) {
+consultationForm.onsubmit = function(event) {
     event.preventDefault();
     popupBidConfirm.style.visibility="visible";
     backgroundHalfDark.style.visibility="visible";

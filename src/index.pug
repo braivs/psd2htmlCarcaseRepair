@@ -101,34 +101,37 @@ html(lang="en")
             form.requestForm-form(action="")
                 .requestForm-form-label
                     .title Марка:
-                    select 
-                        option(selected) Выберите марку
+                    select(required) 
+                        option(selected disabled value='') Выберите марку
                         option Audi
                         option Mercedes-Benz
+                        option Другая
                 .requestForm-form-model
                     .title Модель:
-                    select 
-                        option(selected) Выберите модель
+                    select(required) 
+                        option(selected disabled value='') Выберите модель
                         option Audi A4
                         option Audi A3
+                        option Другая
                 .requestForm-form-yeah
                     .title Год выпуска:
-                    select.year 
-                        option(selected) Выберите год
+                    select(required)
+                        option(selected disabled value='') Выберите год
                         option 2009
                         option 2020
+                        option Другой
                 .requestForm-form-detailes
                     .title Необходимые детали:
-                    textarea(placeholder='Введите')
+                    textarea(placeholder='Введите', required)
                 .requestForm-form-name
                     .title.name Ваше имя:
                     input.name(type="text", placeholder='Введите', required)
                 .requestForm-form-phone
                     .title Ваш телефон:
-                    input(type="tel", placeholder='+7 (9__) ___-__-__')
+                    input(type="tel", placeholder='+7 (9__) ___-__-__', required)
                 .requestForm-form-email
                     .title Ваш e-mail:
-                    input(type="email", placeholder='Введите')
+                    input(type="email", placeholder='Введите', required)
                 button.requestForm-form-button.openPopupConfirm2 Узнать цену
 
         section.detailes.container
@@ -211,14 +214,14 @@ html(lang="en")
         section.consultation.container
             h1 Нужна консультация?
             h2 Заполните форму и получите максимально точную цену!
-            .consultation-form
+            form.consultation-form
                 .input-container
                     .input-block
                         .input-title Ваше имя:
-                        input(type="text")
+                        input(type="text", placeholder='Введите', required)
                     .input-block
                         .input-title Ваш телефон:
-                        input(type="tel")
+                        input(type="tel", placeholder='+7 (9__) ___-__-__', required)
                 button.openPopupConfirm3 Заказать консультацию
         
         section.map.container
@@ -239,7 +242,7 @@ html(lang="en")
                 img(src="img/closePopup.png", alt="closePopup")
             form
                 input.name(type="text", placeholder="Ваше имя", required)
-                input.phone(type="text", placeholder="Ваш телефон", required)
+                input.phone(type="tel", placeholder='Ваш телефон', required)
                 input.mail(type="text", placeholder="Ваша почта", required)
                 button.popupCallSend Отправить заявку
         section.popup.popupQuickCall
@@ -249,7 +252,7 @@ html(lang="en")
                 img(src="img/closePopup.png", alt="closePopup")
             form
                 input.name(type="text", placeholder="Ваше имя", required)
-                input.phone(type="text", placeholder="Ваш телефон", required)
+                input.phone(type="tel", placeholder='Ваш телефон', required)
                 button.openPopupConfirm1 Отправить заявку
         section.backgroundHalfDark
 

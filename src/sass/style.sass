@@ -153,11 +153,16 @@ button
             width: 240px
             padding-left: 15px
             font-size: 12px
+            &:invalid
+                box-shadow: none
         select, input
             height: 40px
+        select:invalid
+            color: gray;
         textarea
             height: 120px
             padding-top: 12px
+            resize: none
         button
             height: 50px
         &-label
@@ -186,28 +191,6 @@ button
             grid-column: 3 / 4
             grid-row: 3 / 4
             align-self: end
-             // &-column
-        //     &-row:not(:last-child)
-        //         margin-bottom: 20px
-        //     &-row
-        //         select, input, textarea
-        //             width: 240px
-        //             height: 40px
-        //             font-size: 13px
-        //             &::placeholder
-        //                 color: #b8b8b8
-        //         input
-        //             padding-left: 15px 
-        //         textarea
-        //             height: 115px
-        //             resize: none
-        //             padding: 15px 0 0 15px
-        //         button
-        //             width: 240px
-        //             height: 50px
-        // &-column:not(:last-child)
-        //     margin-right: 50px
-
 .detailes
     margin-top: 80px
     &-title 
@@ -294,6 +277,8 @@ button
                     height: 45px
                     border: none
                     padding-left: 15px 
+                    &:invalid
+                        box-shadow: none
             .input-block:not(:last-child)
                 margin-right: 40px
         button

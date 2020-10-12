@@ -122,31 +122,34 @@
       <form class="requestForm-form" action="">
         <div class="requestForm-form-label">
           <div class="title">Марка:</div>
-          <select> 
-            <option selected="selected">Выберите марку</option>
+          <select required="required"> 
+            <option selected="selected" disabled="disabled" value="">Выберите марку</option>
             <option>Audi</option>
             <option>Mercedes-Benz</option>
+            <option>Другая</option>
           </select>
         </div>
         <div class="requestForm-form-model">
           <div class="title">Модель:</div>
-          <select> 
-            <option selected="selected">Выберите модель</option>
+          <select required="required"> 
+            <option selected="selected" disabled="disabled" value="">Выберите модель</option>
             <option>Audi A4</option>
             <option>Audi A3</option>
+            <option>Другая</option>
           </select>
         </div>
         <div class="requestForm-form-yeah">
           <div class="title">Год выпуска:</div>
-          <select class="year"> 
-            <option selected="selected">Выберите год</option>
+          <select required="required">
+            <option selected="selected" disabled="disabled" value="">Выберите год</option>
             <option>2009</option>
             <option>2020</option>
+            <option>Другой</option>
           </select>
         </div>
         <div class="requestForm-form-detailes">
           <div class="title">Необходимые детали:</div>
-          <textarea placeholder="Введите"></textarea>
+          <textarea placeholder="Введите" required="required"></textarea>
         </div>
         <div class="requestForm-form-name">
           <div class="title name">Ваше имя:</div>
@@ -154,11 +157,11 @@
         </div>
         <div class="requestForm-form-phone">
           <div class="title">Ваш телефон:</div>
-          <input type="tel" placeholder="+7 (9__) ___-__-__"/>
+          <input type="tel" placeholder="+7 (9__) ___-__-__" required="required"/>
         </div>
         <div class="requestForm-form-email">
           <div class="title">Ваш e-mail:</div>
-          <input type="email" placeholder="Введите"/>
+          <input type="email" placeholder="Введите" required="required"/>
         </div>
         <button class="requestForm-form-button openPopupConfirm2">Узнать цену</button>
       </form>
@@ -241,19 +244,19 @@
     <section class="consultation container">
       <h1>Нужна консультация?</h1>
       <h2>Заполните форму и получите максимально точную цену!</h2>
-      <div class="consultation-form">
+      <form class="consultation-form">
         <div class="input-container">
           <div class="input-block">
             <div class="input-title">Ваше имя:</div>
-            <input type="text"/>
+            <input type="text" placeholder="Введите" required="required"/>
           </div>
           <div class="input-block">
             <div class="input-title">Ваш телефон:</div>
-            <input type="tel"/>
+            <input type="tel" placeholder="+7 (9__) ___-__-__" required="required"/>
           </div>
         </div>
         <button class="openPopupConfirm3">Заказать консультацию</button>
-      </div>
+      </form>
     </section>
     <section class="map container">
       <div class="map-block">
@@ -272,7 +275,7 @@
       <p>Оставьте заявку и мы Вам перезвоним!</p><a class="closePopupCall" href="#"><img src="img/closePopup.png" alt="closePopup"/></a>
       <form>
         <input class="name" type="text" placeholder="Ваше имя" required="required"/>
-        <input class="phone" type="text" placeholder="Ваш телефон" required="required"/>
+        <input class="phone" type="tel" placeholder="Ваш телефон" required="required"/>
         <input class="mail" type="text" placeholder="Ваша почта" required="required"/>
         <button class="popupCallSend">Отправить заявку</button>
       </form>
@@ -282,7 +285,7 @@
       <p>Оставьте заявку и мы Вам перезвоним!</p><a class="closePopupQuickCall" href="#"><img src="img/closePopup.png" alt="closePopup"/></a>
       <form>
         <input class="name" type="text" placeholder="Ваше имя" required="required"/>
-        <input class="phone" type="text" placeholder="Ваш телефон" required="required"/>
+        <input class="phone" type="tel" placeholder="Ваш телефон" required="required"/>
         <button class="openPopupConfirm1">Отправить заявку</button>
       </form>
     </section>

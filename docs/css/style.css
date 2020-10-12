@@ -197,11 +197,16 @@ button {
       width: 240px;
       padding-left: 15px;
       font-size: 12px; }
+      .requestForm-form select:invalid, .requestForm-form input:invalid, .requestForm-form textarea:invalid {
+        box-shadow: none; }
     .requestForm-form select, .requestForm-form input {
       height: 40px; }
+    .requestForm-form select:invalid {
+      color: gray; }
     .requestForm-form textarea {
       height: 120px;
-      padding-top: 12px; }
+      padding-top: 12px;
+      resize: none; }
     .requestForm-form button {
       height: 50px; }
     .requestForm-form-label {
@@ -379,6 +384,8 @@ button {
         height: 45px;
         border: none;
         padding-left: 15px; }
+        .consultation .consultation-form .input-container .input-block input:invalid {
+          box-shadow: none; }
       .consultation .consultation-form .input-container .input-block:not(:last-child) {
         margin-right: 40px; }
     .consultation .consultation-form button {
